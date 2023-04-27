@@ -1,0 +1,6 @@
+<<<<<<< HEAD
+new line
+=======
+Hello, LikeLion
+My name is Juwon Jung
+>>>>>>> 71a11c5 (Add name)

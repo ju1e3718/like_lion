@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: auto;
+    margin: 0 auto;
+    padding: 0 10%;
+}
+
+
+/* navigaton bar */
+nav {
+    height: 90px;
+    line-height: 90px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.nav-logo {
+    font-size: 30px;
+    float: left;
+    margin: 0;
+}
+
+.nav-btn {
+    float: left;
+    list-style: none;
+    margin: 0;
+}
+
+ul.nav-btn>li {
+    float: left;
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-login {
+    float: right;
+    font-size: 20px;
+    margin-right: 0;
+}
+
+
+/* header */
+.hd {
+    position: relative;
+    height: 600px;
+
+}
+
+.hd-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-top: 200px;
+    text-align: center;
+}
+
+img {
+    object-fit: contain;
+}
+
+.hd::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./ad.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+hd .container {
+    position: relative;
+}
+
+
+/* section */
+
+.sec {
+    padding: 100px, 0;
+}
+
+.sec-exp {
+    margin-top: 0;
+    float: left;
+}
+
+.sec-btn {
+    margin-top: 0;
+    float: right;
+}
+
+.sec-title::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.sec-title {
+    padding-top: 100px;
+    font-size: 20px;
+}
+
+.title-title {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+
+/* image */
+.sec-img {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec .atc {
+    width: 24%;
+}
+
+.sec article img {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+
+.scl-status-a {
+    float: left;
+    border-style: solid;
+    border-width: 1.5px;
+    /* border-radius: 10%; */
+    border-color: blue;
+    color: blue;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.scl-status-ny {
+    float: left;
+    border-style: solid;
+    border-width: 1.5px;
+    /* border-radius: 10%; */
+    border-color: green;
+    color: green;
+    font-size: 20px;
+    padding: 5px;
+}
+
+
+.scl-status-d {
+    float: left;
+    border-style: solid;
+    border-width: 1.5px;
+    /* border-radius: 10%; */
+    border-color: rgb(60, 60, 60);
+    color: rgb(60, 60, 60);
+    font-size: 20px;
+    padding: 5px;
+}
+
+.scl-title {
+    clear: left;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.scl-intro {
+    margin-top: 0;
+    font-size: 25px;
+}
+
+.scl-period {
+    font-size: 20px;
+    color: rgb(60, 60, 60);
+}
