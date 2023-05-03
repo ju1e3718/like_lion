@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <title>To Do List</title>
-  </head>
-  <body>
-    <div class="container">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Noto+Serif+KR&display=swap"
+    rel="stylesheet">
+  <title>To Do List</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="head">
+      <h1>To Do List</h1>
       <form class="todo_form">
-        <input type="text" placeholder="add to do list here"/>
+        <input type="text" placeholder="add to do list here" />
         <button id="input_btn">입력하기</button>
       </form>
-
-      <div class="list">
-        <h2>list</h2>
-        <ul class="todo_list"></ul>
-      </div>
-      
     </div>
-    <script src="todo.js"></script>
-  </body>
+
+    <div class="list">
+      <ul class="todo_list"></ul>
+    </div>
+
+  </div>
+  <script src="todo.js"></script>
+</body>
+
 </html>

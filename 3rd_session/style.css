@@ -5,45 +5,62 @@
 body {
     margin: 0;
     width: 100%;
-    /* height: 100px; */
-    background-color: gray;
+    background-color: rgb(170, 204, 210);
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .container {
     width: auto;
     margin: 0 auto;
-    padding: 30% 10%;
+    padding: 0 10%;
     text-align: center;
 }
 
-.form {}
+.head {
+    background-color: rgb(1, 99, 96);
+    color: rgb(212, 239, 239);
+    padding: 5% 10%;
+    font-size: larger;
+}
+
+.head button {
+    font-family: 'Noto Sans KR', sans-serif;
+    border-radius: 4px;
+    height: 50px;
+    font-size: large;
+}
+
+input {
+    border-radius: 4px;
+    height: 50px;
+    width: 50%;
+    font-size: large;
+}
 
 .list {
-    margin-top: 10%;
-    padding: 5%;
-    text-align: left;
-    /* background-color: gray; */
+    margin-top: 0;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    background-color: rgb(46, 171, 161);
+}
+
+.list button {
+    text-align: center;
+    width: 35px;
+    margin: 0 auto;
+    border-radius: 4px;
+    margin: auto 5%;
 }
 
 ul {
+    margin: 5% 20% 5% 20%;
+    /* padding-bottom: 10%; */
     list-style: none;
+    text-align: left;
+    background-color: rgb(212, 239, 239);
+    font-size: larger;
 }
 
-ul li.checked {
-    background: #ddd;
-    color: #272341;
-    text-decoration: line-through;
-}
-
-ul li.checked::before {
-    content: "";
-    position: absolute;
-    border-color: #272341;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 13px;
-    left: 80px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
+li {
+    padding: 2%;
 }
