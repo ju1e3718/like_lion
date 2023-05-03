@@ -1,3 +1,27 @@
-.body {
-    width:960px;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    padding:0;
+    /* background-color: bisque; */
+}
+
+.container {
+    width: auto;
+    margin: 0 auto;
+    padding: 30% 30%;
+    text-align: center;
+}
+
+.form {
+    
+}
+
+.list {
+    margin-top: 10%;
+    padding: 5%;
+    text-align: left;
+    /* background-color: gray; */
 }
