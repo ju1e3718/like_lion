@@ -16,6 +16,7 @@ function printToDo(toDo) {
   li.appendChild(delBtn);
   toDoList.appendChild(li);
   checkBtn.addEventListener("click", checkTodo);
+  checkBtn.addEventListener("dblclick", uncheckTodo);
   delBtn.addEventListener("click", deleteTodo);
 }
 
@@ -34,7 +35,11 @@ function checkTodo(event) {
   // event.target.classList.toggle('checked');
   const checkOne = event.target.parentElement;
   checkOne.style.color = "#dddddd";
-  
+}
+
+function uncheckTodo(event) {
+  const uncheckOne = event.target.parentElement;
+  uncheckOne.style.color = "black";
 }
 
 

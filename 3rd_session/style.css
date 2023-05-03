@@ -4,23 +4,34 @@
 
 body {
     margin: 0;
-    width: 100%;
+    width: 900px;
+    margin: 0 auto;
     background-color: rgb(170, 204, 210);
     font-family: 'Noto Sans KR', sans-serif;
 }
 
 .container {
-    width: auto;
-    margin: 0 auto;
     padding: 0 10%;
     text-align: center;
 }
 
 .head {
+    /* background-color: rgb(1, 99, 96); */
+    /* color: rgb(212, 239, 239); */
+    /* padding: 5% 10%; */
+    font-size: larger;
+}
+
+h1 {
     background-color: rgb(1, 99, 96);
     color: rgb(212, 239, 239);
-    padding: 5% 10%;
-    font-size: larger;
+    margin: 10% 18% 8% 18%;
+    border-radius: 8px;
+    border-style: none;
+}
+
+.todo_form {
+    margin-top: 8%;
 }
 
 .head button {
@@ -41,7 +52,7 @@ input {
     margin-top: 0;
     padding-bottom: 5%;
     padding-top: 5%;
-    background-color: rgb(46, 171, 161);
+    /* background-color: rgb(46, 171, 161); */
 }
 
 .list button {
@@ -57,7 +68,7 @@ ul {
     /* padding-bottom: 10%; */
     list-style: none;
     text-align: left;
-    background-color: rgb(212, 239, 239);
+    /* background-color: rgb(212, 239, 239); */
     font-size: larger;
 }
 
