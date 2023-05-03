@@ -6,14 +6,17 @@ const inputBtn = document.querySelector("#input_btn")
 function printToDo(toDo) {
   const li = document.createElement("li");
   const span = document.createElement("span");
-  const button = document.createElement("button");
+  const checkBtn = document.createElement("button");
+  const delBtn = document.createElement("button");
   span.innerHTML = toDo;
-  button.innerText = "X";
+  delBtn.innerText = "X";
+  checkBtn.innerText = "✔";
+  li.append(checkBtn);
   li.appendChild(span);
-  li.appendChild(button);
+  li.appendChild(delBtn);
   toDoList.appendChild(li);
-  button.addEventListener("click", deleteTodo);
-  // span.addEventListener("dblclick", doneTodo);
+  checkBtn.addEventListener("click", checkTodo);
+  delBtn.addEventListener("click", deleteTodo);
 }
 
 function addToDo(event) {
@@ -26,6 +29,14 @@ function deleteTodo(event) {
   const removingOne = event.target.parentElement;
   removingOne.remove();
 }
+
+function checkTodo(event) {
+  // event.target.classList.toggle('checked');
+  const checkOne = event.target.parentElement;
+  checkOne.style.color = "#dddddd";
+  
+}
+
 
 toDoForm.addEventListener("submit", addToDo);
 inputBtn.addEventListener("click", addToDo)
