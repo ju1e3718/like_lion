@@ -56,10 +56,12 @@ input {
 
 .list button {
     text-align: center;
-    width: 35px;
+    /* width: 35px; */
     margin: 0 auto;
     border-radius: 4px;
     margin: auto 5%;
+    color: white;
+    background-color: rgb(46, 171, 161);
 }
 
 ul {

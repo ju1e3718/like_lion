@@ -9,7 +9,7 @@ function printToDo(toDo) {
   const checkBtn = document.createElement("button");
   const delBtn = document.createElement("button");
   span.innerHTML = toDo;
-  delBtn.innerText = "❌";
+  delBtn.innerText = "delete";
   checkBtn.innerText = "✔";
   li.append(checkBtn);
   li.appendChild(span);
