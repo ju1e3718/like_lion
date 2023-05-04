@@ -3,15 +3,14 @@
 }
 
 body {
-    margin: 0;
-    width: 900px;
+    width: 100%;
     margin: 0 auto;
     background-color: rgb(170, 204, 210);
     font-family: 'Noto Sans KR', sans-serif;
 }
 
 .container {
-    padding: 0 10%;
+    padding: 0 20%;
     text-align: center;
 }
 
@@ -74,4 +73,8 @@ ul {
 
 li {
     padding: 2%;
+}
+
+#noteIcon {
+    padding-right: 3%;
 }
