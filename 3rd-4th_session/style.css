@@ -15,9 +15,6 @@ body {
 }
 
 .head {
-    /* background-color: rgb(1, 99, 96); */
-    /* color: rgb(212, 239, 239); */
-    /* padding: 5% 10%; */
     font-size: larger;
 }
 
@@ -51,12 +48,10 @@ input {
     margin-top: 0;
     padding-bottom: 5%;
     padding-top: 5%;
-    /* background-color: rgb(46, 171, 161); */
 }
 
 .list button {
     text-align: center;
-    /* width: 35px; */
     margin: 0 auto;
     border-radius: 4px;
     margin: auto 5%;
@@ -66,10 +61,8 @@ input {
 
 ul {
     margin: 5% 20% 5% 20%;
-    /* padding-bottom: 10%; */
-    list-style: none;
+    /* list-style: none; */
     text-align: left;
-    /* background-color: rgb(212, 239, 239); */
     font-size: larger;
 }
 

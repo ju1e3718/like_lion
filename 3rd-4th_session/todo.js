@@ -5,8 +5,6 @@ const inputBtn = document.querySelector("#input_btn")
 
 let toDos = []
 
-// localStorage.clear();
-
 function saveTodo() {
     localStorage.setItem("toDos", JSON.stringify(toDos));
 }
@@ -14,19 +12,18 @@ function saveTodo() {
 function printToDo(newToDo) {
     const li = document.createElement("li");
     li.id = newToDo.id;
-    // console.log(newToDo.text);
     const span = document.createElement("span");
-    const checkBtn = document.createElement("button");
+    // const checkBtn = document.createElement("button");
     const delBtn = document.createElement("button");
     span.innerHTML = newToDo.text;
     delBtn.innerText = "delete";
-    checkBtn.innerText = "✔";
-    li.append(checkBtn);
+    // checkBtn.innerText = "✔";
+    // li.append(checkBtn);
     li.appendChild(span);
     li.appendChild(delBtn);
     toDoList.appendChild(li);
-    checkBtn.addEventListener("click", checkTodo);
-    checkBtn.addEventListener("dblclick", uncheckTodo);
+    // checkBtn.addEventListener("click", checkTodo);
+    // checkBtn.addEventListener("dblclick", uncheckTodo);
     delBtn.addEventListener("click", deleteTodo);
 }
 
@@ -56,21 +53,19 @@ console.log(savedTodos);
 if (savedTodos !== null) {
     const parsedTodos = JSON.parse(savedTodos);
     toDos = parsedTodos;
-    // console.log(parsedTodos);
-    // printToDo(toDos.text);
     parsedTodos.forEach(printToDo);
 }
 
 
-function checkTodo(event) {
-    const checkOne = event.target.parentElement;
-    checkOne.style.color = "#dddddd";
-}
+// function checkTodo(event) {
+//     const checkOne = event.target.parentElement;
+//     checkOne.style.color = "#dddddd";
+// }
 
-function uncheckTodo(event) {
-    const uncheckOne = event.target.parentElement;
-    uncheckOne.style.color = "black";
-}
+// function uncheckTodo(event) {
+//     const uncheckOne = event.target.parentElement;
+//     uncheckOne.style.color = "black";
+// }
 
 toDoForm.addEventListener("submit", addToDo);
 inputBtn.addEventListener("click", addToDo)
